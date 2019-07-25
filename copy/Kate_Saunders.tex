@@ -1,0 +1,160 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 23 November 2018
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+\colorlet{awesome}{awesome-red}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\def\endfirstpage{\newpage}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+
+\name{Kate Saunders}{}
+
+\position{Postdoctoral Researcher}
+\address{Delft Institute of Applied Mathematics, TU Delft}
+
+\mobile{+31 6 3374 7624}
+\email{\href{mailto:K.R.Saunders@tudelft.nl}{\nolinkurl{K.R.Saunders@tudelft.nl}}}
+\github{katerobsau}
+\twitter{katerobsau}
+
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \skype{skype-id}
+% \reddit{reddit-id}
+
+
+\usepackage{booktabs}
+
+% Templates for detailed entries
+% Arguments: what when with where why
+\usepackage{etoolbox}
+\def\detaileditem#1#2#3#4#5{%
+\cventry{#1}{#3}{#4}{#2}{\ifx#5\empty\else{\begin{cvitems}#5\end{cvitems}}\fi}}
+\def\detailedsection#1{\begin{cventries}#1\end{cventries}}
+
+% Templates for brief entries
+% Arguments: what when with
+\def\briefitem#1#2#3{\cvhonor{}{#1}{#3}{#2}}
+\def\briefsection#1{\begin{cvhonors}#1\end{cvhonors}}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%------------------------------------------------------------------------------
+
+
+
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+\makecvfooter
+  {July 2019}
+    {Kate Saunders~~~·~~~Curriculum Vitae}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%------------------------------------------------------------------------------
+
+
+
+\section{About me}\label{about-me}
+
+\begin{itemize}
+\tightlist
+\item
+  Current research is in statistical post-processing
+\item
+  Core focus is on improving probabilistic forecasts of extreme weather
+  events
+\item
+  PhD research was in extreme value theory
+\item
+  Core PhD focus was on modelling rainfall extremes in continuous space
+  with dependence
+\item
+  Applications considered in the thesis helped to improve our
+  understanding of rainfall extremes in Australia
+\item
+  Passionate about R programming and data visualisation
+\end{itemize}
+
+\section{Employment}\label{employment}
+
+\detailedsection{\detaileditem{Delft University of Technology}{Oct. 2018 - Present}{Posdoctoral Researcher}{Deflt, Netherlands}{\item{Collaborating on a joint project with Koninklijk Nederlands Meteorologisch Instituut (KNMI)}\item{Research Interests: Post-processing for extreme events, compound events, modelling extremal dependence using covariates}}\detaileditem{Commonwealth Scientific Institue of Technology (CSIRO)}{Feb. 2012 - Feb. 2014}{Graduate Researcher}{Melbourne, Australia}{\item{Research Interests: natural disaster modelling, floods, tsnumais, sea level rise, computational fluid dynamics}}}
+
+\section{Education}\label{education}
+
+\detailedsection{\detaileditem{The University of Melbourne}{Mar. 2014 - Oct. 2018}{Doctor of Philosophy}{Melbourne, Australia}{\item{Thesis Advisors: Prof. Peter Taylor, Prof. David Karoly and Dr. Alec Stephenson}\item{Thesis Title: An Investigation of Australian Rainfall using Extreme Value Theory}\item{Research Interests: Extreme Value Theory, Statistics, Max-stable Processes, Rainfall Extremes, Extremal Dependence, Quality Control}}\detaileditem{The University of Queensland}{Jul. 2010 - Jun. 2011}{Bachelor of Science (Honours I in Mathematics)}{Brisbane, Australia}{\item{Thesis advisors: Prof. Tony Roberts}\item{Thesis title: Mean first passage time for discrete periodic networks}}\detaileditem{The University of Queensland}{Feb. 2007 - Jun. 2010}{Bachelor of Science}{Brisbane, Australia}{\item{Major in mathematics}}}
+
+\section{Publications}\label{publications}
+
+\detailedsection{\detaileditem{K.R. Saunders, A.G. Stephenson, AG and D.J. Karoly}{2019}{A Regionalisation Approach for Rainfall based on Extremal Dependence}{Extremes (in submission)}{\item{Preprint: https://arxiv.org/abs/1907.05750}}\detaileditem{K.R. Saunders}{2018}{An Investigation of Australian Rainfall Using Extreme Value Theory}{PhD Thesis}{\item{Identifier: http://hdl.handle.net/11343/220318}}\detaileditem{A.G. Stephenson, K. Saunders and L. Tafakori}{2018}{The Winning Entry for the EVA2017 Competition for Spatiotemporal Prediction of Extreme Rainfall using Generalized Extreme Value Quantiles}{Extremes}{\item{DOI: 10.1007/s10687-018-0321-0}}\detaileditem{K. Saunders, A.G. Stephenson, P.G. Taylor, and D. Karoly}{2017}{The Spatial Distribution of Rainfall Extremes and the Influence of El Niño Southern Oscillation}{Weather and Climate Extremes}{\item{DOI: 10.1016/j.wace.2017.10.001}}\detaileditem{P. Bayliss, K. Saunders, L. Dutra, L. Melo, J. Hilton, M. Prakash, F. Woolard}{2016}{Assessing Sea Level Rise Risks to Coastal Floodplains in the Kakadu Region, Northern Australia, using a tidally-driven hydrodynamic model}{Marine and Freshwater Research}{\item{DOI: 10.1071/MF16049}}\detaileditem{K. Saunders, M. Prakash, P.W. Cleary and M. Cordell}{2014}{Application of Smoothed Particle Hydrodynamics for Modelling Gated Spillway Flows}{Applied Mathematical Modelling}{\item{DOI: 10.1016/j.apm.2014.05.008}}}
+
+\section{Popular Science Articles}\label{popular-science-articles}
+
+\detailedsection{\detaileditem{K. Saunders and A.G. Stephenson}{2017}{Is Usain Bolt the greatest athlete of all time? That's not what the numbers say}{The Conversation}{\item{Article statistics: 20,609 Readers, 275 Shares}}\detaileditem{K. Saunders, D. Karoly and P.G. Taylor}{2015}{Explainer: was the Sydney storm ‘once-in-a-century’?}{The Conversation}{\item{Article statistics: 8591 Readers, 80 Shares}}}
+
+\section{Scholarships and Awards}\label{scholarships-and-awards}
+
+\detailedsection{\detaileditem{\$30,000 AUD per annum}{2014 -- 2018}{Laureate Fellowship Postgraduate Researcher Award}{The University of Melbourne}{\item{Awarded in lieu of the Australian Postgraduate Award (\$25,000 AUD per annum)}}}
+
+\end{document}

@@ -38,7 +38,18 @@ tribble(
     "Posdoctoral Researcher", "Delft University of Technology", "Deflt, Netherlands", "Oct. 2018 - Present", "Research Interests: Post-processing for extreme events, compound events, modelling extremal dependence using covariates",
   
    "Graduate Researcher", "Commonwealth Scientific Institue of Technology (CSIRO)", "Melbourne, Australia", "Feb. 2012 - Feb. 2014", "Research Interests: natural disaster modelling, floods, tsnumais, sea level rise, computational fluid dynamics"
-  
+ 
+  #  "Teaching Associate", "Monash University", "Caulfield & Clayton, Australia", "S1 2016 - Present", "Business forecasting (ETF3231/ETF5231)",
+  # "Teaching Associate", "Monash University", "Caulfield & Clayton, Australia", "S1 2016 - Present", "Mathematics for business (ETF2700)",
+  # "Teaching Associate", "Monash University", "Caulfield & Clayton, Australia", "S1 2016 - Present", "Data modelling and computing (ETC1010)",
+  # "Research Assistant", "Monash University", "Clayton, Australia", "Jan. 2016 - Present", "Supervisors include Rob Hyndman, Dianne Cook, and George Athanasopoulos.",
+  # "Research Assistant", "Monash University", "Clayton, Australia", "Jan. 2016 - Present", "Consulting projects with DiabetesLab, Tennis Australia, Monash University and Huawei.",
+  # "Research Assistant", "Monash University", "Clayton, Australia", "Jan. 2016 - Present", "Contributed to the development of numerous open source R packages.",
+  # "Volunteer", "Rotaract", "Monash, Australia", "Feb. 2013 - Nov. 2016", "Development and maintenance of club website and online services.",
+  # "Volunteer", "Rotaract", "Monash, Australia", "Feb. 2013 - Nov. 2016", "Organising and hosting fundraisers.",
+  # "Student Ambassador", "Google", "Sydney, Australia", "Feb. 2015 - Nov. 2015", "Supported Google's presence on campus with events and media.",
+  # "Data Mining (Internship)", "iSelect", "Cheltenham, Australia", "Feb. 2015 - Mar. 2015", "Improved business data and issue reporting with interactive visualisations, and model-based anomaly detection.",
+  # "Fresh Produce", "Coles", "Rowville, Australia", "Oct. 2010 - Nov. 2015", "Food preparation & display, first aid, staff training and customer assistance."
 ) %>% 
   detailed_entries(company, dates, role, loc, details)
 ```
@@ -89,129 +100,7 @@ tribble(
   detailed_entries(authors, year, title, journal, doi)
 ```
 
-# Teaching Experience
-```{r}
-tribble(
-  ~ position, ~ faculty, ~ location, ~ year, ~ details,
-  
-  # Lecturing upcoming
-  
-  "Teaching Assistant",
-  "School of Mathematics and Statistics",
-  "The University of Melbourne",
-  "2014 -- 2015",
-  "MAST20005 Statistics, MAST20004 Probability for statistics, MAST10006 Calculus 2",
-  
-  "College Tutor",
-  "Newman College", 
-  "The University of Melbourne",
-  "2015",
-  "Probability and Statistics tutor for undergraduate students",
-  
-  "Teaching Assistant and Peer Assisted Study Leader",
-  "School of Mathematics and Physics",
-  "The University of Queensland",
-  "2007 -- 2011",
-  "MATH1061 Discrete Mathematics, MATH1051 Calculus and Linear Algebra,
-  MATH1050 Mathematical Foundations, MATH1040 Basic Mathematics"
-  
-) %>% 
-  detailed_entries(faculty, year, position, location, details)
-
-```
-
-
-# Supervision Experience
-
-```{r}
-tribble(
- ~ type, ~ year, ~ where, ~ topic,
- 
-"Vacation Student (8 week project)", 
-"2016",
-"The University of Melbourne",
-"Project Topic: Identifying spurious inhomogeneities in daily rainfall observations",
-
-"Vacation Student (4 week project)", 
-"2012",
-"CSIRO",
-"Project Topic: A sensitivity analysis of tsunami inundation using a shallow water solver"
-) %>% 
-  detailed_entries(topic, year, type, where) 
-
-```
-
-# Invited talks
-<!-- Tide Seminar -->
-<!-- Newcastle upcoming -->
-<!-- Delft/Statistics Seminar upcoming -->
-
-# Community Contributions
-
-## Workshop Organisation
-<!-- KNMI/Delft cross post-processing workshop -->
-<!-- Climate College -->
-<!-- Group Retreat -->
-
-## Women in STEM 
-
-```{r}
-tribble(
-  ~with, ~when, ~what, ~why,
-  
-  "Invtied Talk: R Ladies Rotterdam",
-  "2019",
-  "An Introduction to Web Scraping using Rvest",
-  "R-Ladies’ is a diversity initiative, whose aim is to help empower underrepresented minorities within the R community.",
-  
-  "Women in mathematics panel discussion on affirmitive action",
-  "2016",
-  "Event Organiser and Panel Chair",
-  "Internation Womens' Day Event #BeBoldForChange",
-
-# The School of Mathematics and Statistics made the bold decision last year to advertise and hire female only candidates. To celebrate this decision we will be holding a Q & A in the School of Mathematics and Statistics.
-# In the Q & A we hope to bring light to some of the gender issues that were drivers behind the hiring decision, discuss the legalities and give people the opportunity to ask questions. 
-  
-  "A celebration of Dr. Alison Harcourt (Order of Australia)",
-  "2015",
-  "Event Joint Organiser",
-  "Internation Womens' Day Event #MakeItHappen"
-  
-) %>% 
-   detailed_entries(with = with, when = when, what = what, why = why)
-```
-
-## Journal Refereering
-Spatial Statistics, Stochastic Networks, Extremes, Environmetrics
-
-## Committee Positions
-<!-- Stamps president -->
-
-## Mentoring
-```{r}
-tribble(
-  ~with, ~when, ~what, ~why,
-  
-  "Grabbing your Audience's Attention: Advice on Giving Talks",
-  "2019",
-  "ACEMS Seminar Series",
-  "Mentoring talk shared live across ACEMS university nodes",
-  
-  "ACEMS Mentoring Program",
-  "2019",
-  "Mentor",
-  "Paired with an early stage PhD Student in Statistics at Monash University"
-  
-) %>% 
-   detailed_entries(with = with, when = when, what = what, why = why)
-```
-
-# Outreach & Science Communication
-
-## ClimArt
-Package details
-
-## Popular Science Articles
+# Popular Science Articles
 ```{r}
 tribble(
   ~ authors, ~ year, ~ title, ~ blog, ~ stats,
@@ -234,34 +123,22 @@ tribble(
   detailed_entries(authors, year, title, blog, stats)  
 ```  
 
-## Schools
-
-<!-- Mathscraft -->
-<!-- Mathematicians in Schools -->
-
 # Scholarships and Awards
 ```{r}
 tribble(
- ~ award, ~ from, ~ amount, ~ dates, ~ details,
+ ~ award, ~ company, ~ amount, ~ dates, ~ details,
   
- "Laureate Fellowship: Postgraduate Researcher Award",
+ "Laureate Fellowship Postgraduate Researcher Award",
  "The University of Melbourne",
- "$30,000 AUD per annum (~ €18,800 tax free)",
+ "$30,000 AUD per annum",
  "2014 -- 2018",
- "Awarded in lieu of the Australian Postgraduate Award ($25,000 AUD per annum)",
+ "Awarded in lieu of the Australian Postgraduate Award ($25,000 AUD per annum)"
  
-  "Postgraduate Top Up Scholarship",
-  "CSIRO",
-  "$10,000 per annum (~ €6,265 tax free)",
-  "2015 -- 2018",
-  "Awarded to outstanding graduates to undertake postgraduate research",
-  
-  "Science Abroad Travelling Scholarship",
-  "The University of Melbourne",
-  "$1,500 AUD in total (~ €940 tax free)",
-  "2016",
-  "Awarded to outstanding graduates to undertake research abroad"
-  
+# {\bf Commonwealth Scientific and Industrial Research Organisation} \smallskip \\
+# {\em Postgraduate Top Up Scholarship} (\$10,000 per annum) \hfill {2015 -- 2018} \\
+# Awarded to outstanding graduates to undertake postgraduate research \smallskip \\
+# {\em Science Abroad Travelling Scholarship} (\$1,500 total) \hfill {2016} \\
+# Awarded to outstanding graduates to undertake research abroad \smallskip \\
 # {\bf The University of Queensland} \smallskip \\
 # {\em Student Exchange Scholarship} (\$5,000 total) \hfill {2010}\\
 # Awarded on the basis of academic merit to support a student exchange abroad \smallskip\\
@@ -271,40 +148,8 @@ tribble(
 # Awarded on the basis of academic merit to undertake an 8 week research project
 
 ) %>% 
-  detailed_entries(amount, dates, award, from, details)  
+  detailed_entries(amount, dates, award, company, details,)  
 ```  
-
-# Prizes
-```{r}
-tribble(
- ~ prize, ~ from, ~ year,
-  
-  "Winner of the Young Statisticians Video Competition",
-  "Statistics Society of Australia",
-  # "$200 AUD prize (€125)",
-  "2017",
-  
-  "Winning Team of the Data Challenge: Prediction of Extremal Precipitation", 
-  "Extreme Value Analysis Conference, Delft, 2017",
-   "2017"
-
-) %>% 
-  detailed_entries(from, year, prize) 
-```
-
-# Affiliations 
-
-* Academic Collaborator with Koninklijk Nederlands Meteorologisch Instituut (KNMI)
-* Associate Investigator with Australian Centre of Excellence in Mathematical and Statistical Frontiers (ACEMS)
-* Women in Mathematics Special Interest Group (WIMSIG)
-* Statistical Society of Australia: SSA (Past Member)
-* Australian Mathematical Society (Past Member)
-* German Climate and Energy College (Alumni)
-
-# Referees
-Available upon request
-
-
 
 <!-- # Relevant Skills -->
 <!-- ```{r} -->
