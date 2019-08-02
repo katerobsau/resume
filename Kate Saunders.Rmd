@@ -34,10 +34,24 @@ knitr::opts_chunk$set(echo = FALSE)
 ```{r}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
-  "Posdoctoral Researcher", "Delft University of Technology", "Deflt, Netherlands", "Oct. 2018 - Present", "Collaborating on a joint project with Koninklijk Nederlands Meteorologisch Instituut (KNMI)",
-    "Posdoctoral Researcher", "Delft University of Technology", "Deflt, Netherlands", "Oct. 2018 - Present", "Research Interests: Post-processing for extreme events, compound events, modelling extremal dependence using covariates",
   
-   "Graduate Researcher", "Commonwealth Scientific Institue of Technology (CSIRO)", "Melbourne, Australia", "Feb. 2012 - Feb. 2014", "Research Interests: natural disaster modelling, floods, tsnumais, sea level rise, computational fluid dynamics"
+  "Posdoctoral Researcher", 
+  "Delft University of Technology", 
+  "Deflt, Netherlands", 
+  "Oct. 2018 - Present", 
+  "Collaborating on a joint project with Koninklijk Nederlands Meteorologisch Instituut (KNMI)",
+    
+  "Posdoctoral Researcher", 
+  "Delft University of Technology", 
+  "Deflt, Netherlands", 
+  "Oct. 2018 - Present", 
+  "Research Interests: Post-processing for extreme events, compound events, modelling extremal dependence using covariates",
+  
+   "Graduate Researcher", 
+  "Commonwealth Scientific Institue of Technology (CSIRO)", 
+  "Melbourne, Australia", 
+  "Feb. 2012 - Feb. 2014", 
+  "Research Interests: natural disaster modelling, floods, tsnumais, sea level rise, computational fluid dynamics"
   
 ) %>% 
   detailed_entries(company, dates, role, loc, details)
@@ -96,7 +110,7 @@ tribble(
   
   # Lecturing upcoming
   
-  "Teaching Assistant",
+  "Tutor",
   "School of Mathematics and Statistics",
   "The University of Melbourne",
   "2014 -- 2015",
@@ -108,7 +122,7 @@ tribble(
   "2015",
   "Probability and Statistics tutor for undergraduate students",
   
-  "Teaching Assistant and Peer Assisted Study Leader",
+  "Tutor",
   "School of Mathematics and Physics",
   "The University of Queensland",
   "2007 -- 2011",
@@ -142,26 +156,61 @@ tribble(
 ```
 
 # Invited talks
-<!-- Tide Seminar -->
+
+```{r}
+tribble(
+ ~ type, ~ year, ~ where, ~ topic,
+ 
+  "Extreme TiDE Seminar Series", 
+  "2019",
+  "Tilburg University, Netherlands",
+  "A Regionalisation Approach for Extremes"
+ 
+) %>% 
+  detailed_entries(topic, year, type, where) 
+```
 <!-- Newcastle upcoming -->
 <!-- Delft/Statistics Seminar upcoming -->
 
-# Community Contributions
+# Other Academic Activities
 
 ## Workshop Organisation
-<!-- KNMI/Delft cross post-processing workshop -->
-<!-- Climate College -->
-<!-- Group Retreat -->
-
-## Women in STEM 
 
 ```{r}
 tribble(
   ~with, ~when, ~what, ~why,
   
-  "Invtied Talk: R Ladies Rotterdam",
-  "2019",
+  "KNMI and TU Delft workshop on post-processing",
+  "(upcoming in 2019)",
+  "TU Delft",
+  "A workshop prom",
+  
+  "Climate and Energy College Retreat",
+  "2018",
+  "Hidden Vale, Victoria",
+  "A workshop prom",
+  
+  "Applied Probability Group Retreat",
+  "2017",
+  "Lorne, Victoria",
+  "Group "
+  
+  ) %>% 
+   detailed_entries(with = with, when = when, what = what, why = why)
+```
+
+## Journal Refereering
+Spatial Statistics, Stochastic Networks, Extremes, Environmetrics
+
+## Promotion of Women in STEM 
+
+```{r}
+tribble(
+  ~with, ~when, ~what, ~why,
+  
   "An Introduction to Web Scraping using Rvest",
+  "2019",
+  "Invited presentation for R-Ladies Rotterdam",
   "R-Ladies’ is a diversity initiative, whose aim is to help empower underrepresented minorities within the R community.",
   
   "Women in mathematics panel discussion on affirmitive action",
@@ -181,12 +230,6 @@ tribble(
    detailed_entries(with = with, when = when, what = what, why = why)
 ```
 
-## Journal Refereering
-Spatial Statistics, Stochastic Networks, Extremes, Environmetrics
-
-## Committee Positions
-<!-- Stamps president -->
-
 ## Mentoring
 ```{r}
 tribble(
@@ -205,6 +248,21 @@ tribble(
 ) %>% 
    detailed_entries(with = with, when = when, what = what, why = why)
 ```
+
+## Committee Positions
+```{r}
+tribble(
+  ~with, ~when, ~where, ~why,
+  
+  "President of the Mathematics and Statistics Student Society (STAMPS)",
+  "2015 -- 2016",
+  "University of Melbourne",
+  "Events run include: National Science Week Events, Careers Panel, Social Events"
+  
+) %>% 
+   detailed_entries(with = with, when = when, where = where, why = why)
+```
+
 
 # Outreach & Science Communication
 
