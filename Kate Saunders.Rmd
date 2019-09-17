@@ -22,7 +22,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # About me
 
- * Current research is in statistical post-processing
+ * Current research is in statistical post-processing and compound events
 * Core focus is on improving probabilistic forecasts of extreme weather events
  * PhD research was in extreme value theory
  * Core PhD focus was on modelling rainfall extremes in continuous space with dependence
@@ -108,21 +108,25 @@ tribble(
 tribble(
   ~ position, ~ faculty, ~ location, ~ year, ~ details,
   
-  # Lecturing upcoming
+  "Lecturer",
+  "Deflt Institute of Applied Mathematics",
+  "TU Deflt",
+  "Current",
+  "WI2180LR-II Probability and Statistics",
   
-  "Tutor",
+  "Sessional Tutor",
   "School of Mathematics and Statistics",
   "The University of Melbourne",
   "2014 -- 2015",
   "MAST20005 Statistics, MAST20004 Probability for statistics, MAST10006 Calculus 2",
   
-  "College Tutor",
-  "Newman College", 
-  "The University of Melbourne",
-  "2015",
-  "Probability and Statistics tutor for undergraduate students",
-  
-  "Tutor",
+  # "College Tutor",
+  # "Newman College", 
+  # "The University of Melbourne",
+  # "2015",
+  # "Probability and Statistics tutor for undergraduate students",
+  # 
+  "Sessional Tutor",
   "School of Mathematics and Physics",
   "The University of Queensland",
   "2007 -- 2011",
@@ -134,34 +138,13 @@ tribble(
 
 ```
 
-
-# Supervision Experience
-
-```{r}
-tribble(
- ~ type, ~ year, ~ where, ~ topic,
- 
-"Vacation Student (8 week project)", 
-"2016",
-"The University of Melbourne",
-"Project Topic: Identifying spurious inhomogeneities in daily rainfall observations",
-
-"Vacation Student (4 week project)", 
-"2012",
-"CSIRO",
-"Project Topic: A sensitivity analysis of tsunami inundation using a shallow water solver"
-) %>% 
-  detailed_entries(topic, year, type, where) 
-
-```
-
 # Invited talks
 
 ```{r}
 tribble(
  ~ type, ~ year, ~ where, ~ topic,
  
-  "Extreme TiDE Seminar Series", 
+  "Extremes TiDE Seminar Series", 
   "2019",
   "Tilburg University, Netherlands",
   "A Regionalisation Approach for Extremes"
@@ -172,6 +155,25 @@ tribble(
 <!-- Newcastle upcoming -->
 <!-- Delft/Statistics Seminar upcoming -->
 
+# Supervision Experience
+
+```{r}
+tribble(
+ ~ type, ~ year, ~ where, ~ topic,
+ 
+"Undergraduate Student",#" (8 week project)", 
+"2016",
+"The University of Melbourne",
+"Project Topic: Identifying spurious inhomogeneities in daily rainfall observations",
+
+"Undergraduate Student", # (4 week project)", 
+"2012",
+"CSIRO",
+"Project Topic: A sensitivity analysis of tsunami inundation using a shallow water solver"
+) %>% 
+  detailed_entries(topic, year, type, where) 
+```
+
 # Other Academic Activities
 
 ## Workshop Organisation
@@ -180,20 +182,20 @@ tribble(
 tribble(
   ~with, ~when, ~what, ~why,
   
-  "KNMI and TU Delft workshop on post-processing",
-  "(upcoming in 2019)",
-  "TU Delft",
-  "A workshop prom",
-  
+  # "KNMI and TU Delft workshop on post-processing",
+  # "(upcoming in 2019)",
+  # "TU Delft",
+  # "A workshop prom",
+  # 
   "Climate and Energy College Retreat",
   "2018",
   "Hidden Vale, Victoria",
-  "A workshop prom",
+  "A workshop to promote knowledge sharing between PhD students",
   
   "Applied Probability Group Retreat",
   "2017",
   "Lorne, Victoria",
-  "Group "
+  "An internal workshop to share new research ideas in applied probability"
   
   ) %>% 
    detailed_entries(with = with, when = when, what = what, why = why)
@@ -229,6 +231,7 @@ tribble(
 ) %>% 
    detailed_entries(with = with, when = when, what = what, why = why)
 ```
+\newpage
 
 ## Mentoring
 ```{r}
@@ -252,22 +255,34 @@ tribble(
 ## Committee Positions
 ```{r}
 tribble(
-  ~with, ~when, ~where, ~why,
+  ~with, ~when, ~where, ~why, ~what,
   
-  "President of the Mathematics and Statistics Student Society (STAMPS)",
+  "Student President",
   "2015 -- 2016",
   "University of Melbourne",
-  "Events run include: National Science Week Events, Careers Panel, Social Events"
+  "Events run include: National Science Week Events, Careers Panel, Social Events",
+  "Mathematics and Statistics Student Society (STAMPS)"
   
 ) %>% 
-   detailed_entries(with = with, when = when, where = where, why = why)
+   detailed_entries(with = with, when = when, where = where, what = what, why = why)
 ```
-
 
 # Outreach & Science Communication
 
-## ClimArt
-Package details
+## Art Exhibition
+
+```{r}
+tribble(
+  ~with, ~when, ~what, ~why,
+  
+  "ClimArt",
+  "2019",
+  "R Package",
+  "Produced code that visualises climate observations and how these observations are changing. These visualisations are used in an exhibition called Climate Change versus Art."
+  
+) %>% 
+   detailed_entries(with = with, when = when, what = what, why = why)
+```
 
 ## Popular Science Articles
 ```{r}
@@ -294,8 +309,23 @@ tribble(
 
 ## Schools
 
-<!-- Mathscraft -->
-<!-- Mathematicians in Schools -->
+```{r}
+tribble(
+  ~with, ~when, ~what, ~why,
+  
+  "Maths like a Mathematician",
+  "2015 - 2017",
+  "ACEMS Mathscraft",
+  "Initiative to work with schools to teach mathematical style thinking to students",
+  
+  "Mathematicians in Schools",
+  "2012 - 2013",
+  "Partner school Mentone Girls' Grammar School",
+  "Presented my research in schools to help students understand how maths is used in the real world"
+  
+) %>% 
+   detailed_entries(with = with, when = when, what = what, why = why)
+```
 
 # Scholarships and Awards
 ```{r}
@@ -354,13 +384,14 @@ tribble(
 
 * Academic Collaborator with Koninklijk Nederlands Meteorologisch Instituut (KNMI)
 * Associate Investigator with Australian Centre of Excellence in Mathematical and Statistical Frontiers (ACEMS)
+* German Climate and Energy College (Alumni)
 * Women in Mathematics Special Interest Group (WIMSIG)
 * Statistical Society of Australia: SSA (Past Member)
 * Australian Mathematical Society (Past Member)
-* German Climate and Energy College (Alumni)
 
-# Referees
-Available upon request
+
+<!-- # Referees -->
+<!-- Available upon request -->
 
 
 
