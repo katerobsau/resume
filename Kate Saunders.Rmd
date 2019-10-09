@@ -35,18 +35,12 @@ knitr::opts_chunk$set(echo = FALSE)
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
   
-  "Posdoctoral Researcher", 
+  "Postdoctoral Researcher", 
   "Delft University of Technology", 
   "Deflt, Netherlands", 
   "Oct. 2018 - Present", 
   "Collaborating on a joint project with Koninklijk Nederlands Meteorologisch Instituut (KNMI)",
     
-  "Posdoctoral Researcher", 
-  "Delft University of Technology", 
-  "Deflt, Netherlands", 
-  "Oct. 2018 - Present", 
-  "Research Interests: Post-processing for extreme events, compound events, modelling extremal dependence using covariates",
-  
    "Graduate Researcher", 
   "Commonwealth Scientific Institue of Technology (CSIRO)", 
   "Melbourne, Australia", 
@@ -110,9 +104,9 @@ tribble(
   
   "Lecturer",
   "Deflt Institute of Applied Mathematics",
-  "TU Deflt",
-  "Current",
-  "WI2180LR-II Probability and Statistics",
+  "TU Delft",
+  "2019",
+  "WI2180LR-II Probability and Statistics for Aeronautical Engineers",
   
   "Sessional Tutor",
   "School of Mathematics and Statistics",
@@ -218,7 +212,7 @@ tribble(
   "Women in mathematics panel discussion on affirmitive action",
   "2016",
   "Event Organiser and Panel Chair",
-  "Internation Womens' Day Event #BeBoldForChange",
+  "International Womens' Day Event #BeBoldForChange",
 
 # The School of Mathematics and Statistics made the bold decision last year to advertise and hire female only candidates. To celebrate this decision we will be holding a Q & A in the School of Mathematics and Statistics.
 # In the Q & A we hope to bring light to some of the gender issues that were drivers behind the hiring decision, discuss the legalities and give people the opportunity to ask questions. 
