@@ -34,19 +34,19 @@ I have \textbf{8 years of experience teaching mathematics and statistics at a un
 
 \textbf{I hope to contribute to the Engineering School through the creation of a course in Extreme Value Analysis, with a core focus being how the theory is used for hydrological applications.} My research experience will be invalueable in designing an application relevant course while still conveying the important underlying statistical concepts. This experience includes; extreme value modelling of rainfall extremes, flood events, storm surge and compound events. I am confident I can share this knowledge with students and help instill them with a confidence in their use of extreme value statistics.
 
-While this is indeed an ambitious but achievable goal, I am also \textbf{confident that I can contribute in other ways to the department via the mathematical teaching load}. This is evidenced by my past experience teaching many of the mathematics and statistics subjects that engineers are required to take at the University of Melbourne.
+While this is indeed an ambitious but achievable goal, I am also \textbf{confident that I can contribute in other ways to the school via the mathematical teaching load}. This is evidenced by my past experience teaching many of the mathematics and statistics subjects that engineers are required to take at the University of Melbourne.
 
-I also hope to be a \textbf{point of call within the department for help on statistical problems and guidance}. Helping others with their research questions forms an important part of contributing to my community and mentoring the next generation of researchers. 
+I also hope to be a \textbf{point of call within the school for help on statistical problems and guidance}. Helping others with their research questions forms an important part of contributing to my community and mentoring the next generation of researchers. 
 
 # Supervison
 
-This fellowship provides a great opportuntity to be involved in the supervision of students. In particular, I hope to work with the staff in the labs of Hydrological Processes and Managing Variability to leverage our joint knowledge to create exciting masters student projects. Ideally, this fellowship will also provide an opportuntity for me to gain experience co-supervisoring PhD students. As a recent graduate, I feel I have much to offer in the capacity of PhD co-supervisor and student mentor.
+\textbf{This fellowship provides a great opportuntity to be involved in the supervision of students.} In particular, I hope to work with the staff in the labs of Hydrological Processes and Managing Variability to leverage our joint knowledge to create exciting masters student projects. Ideally, this fellowship will also provide an opportuntity for me to gain experience co-supervisoring PhD students. \texbf{As a recent graduate, I feel I have much to offer in the capacity of PhD co-supervisor and student mentor.}
 
-I have learnt from my past supervision experiences, around project scoping, producing tangible outcomes and balancing expectations. I hope to bring this awareness to future students I supervise. Past supervison experience includes helping students to; 
+I have learnt from my past supervision experiences, around project scoping, producing tangible outcomes and balancing expectations. I hope to bring this knowledge and awareness to future students I supervise. My past supervison experience includes; 
 
-* Perform a sensitivity analysis when estimating tsunami inundation using a shallow water solver. This study was needed to address missing data within the input bathymetry in order to understand model uncertainty.
+* A sensitivity analysis when estimating tsunami inundation using a shallow water solver. This study was needed to address missing data within the input bathymetry in order to understand model uncertainty.
 * Identify spurious inhomogeneities within daily rainfall observations. Spurious observations can present as extremes which can adversely impact risk estimates.
-* I also have a joint masters project advertised with KNMI (Dutch Meteorlogical Institue) for a student to compare citizen science observations of wind gusts to verified observations. Verifying citizen data is incredibly useful for climate modelling and forecasting wind energy.
+* I also have a joint masters project advertised with KNMI (Dutch Meteorlogical Institue) for a student to compare citizen science observations of wind gusts to verified observations. Verifying citizen science data is incredibly useful for climate modelling and forecasting wind energy.
 * Outside of formal projects, I also have experience mentoring students both through formal channels, such as the ACEMS mentoring program, and through more informal student networks, such as leadership roles in student societies. 
 
 # Teaching Philosophy
