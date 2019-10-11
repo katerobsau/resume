@@ -1,0 +1,93 @@
+---
+name: Kate Saunders
+position: "Postdoctoral Researcher"
+address: "Delft Institute of Applied Mathematics, TU Delft"
+phone: +31 6 3374 7624
+email: "K.R.Saunders@tudelft.nl"
+twitter: katerobsau
+github: katerobsau
+date: "`r format(Sys.time(), '%B %Y')`"
+output: vitae::awesomecv
+# headcolor: '#9bcf2f'
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(vitae)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Teaching Experience
+
+I have \textbf{8 years of experience teaching mathematics and statistics at a university level}. The classes I have taught include; calculus, probability and statistcs (a full list of courses is included on my CV). Students in these classes were mainly from engineering backgrounds. This teaching experience also extends to:
+
+* Coding instruction (UQ: MATH1051, UniMelb: MAST20005, MAST20006, RLadies Workshop)
+* Course development (UQ: SCIE1000)
+* Marking assignments and exams (All courses)
+* Tutorial coordination (UQ: MATH1040, MATH1050)
+
+\textbf{As a lecturer at TU Delft I used interactive questions during lectures.} These questions help me to assess student understanding in real time and were found to contribute to the students overall enjoyment of the course. This was seen through student feedback. Given this, I will continue to incorporate interactive questions into my future classes. 
+
+\textbf{Interactivity forms an important part of my communication style}. I like to generate back-and-forth disscusion in class to increase student engagement. I also like to explain technical concepts through the use of interactive visualisations made in R. Where possible, I have found that teaching concepts dynamically as opposed to statically can improve understanding and idea retition. 
+
+# Teaching Potential
+
+\textbf{I hope to contribute to the Engineering School through the creation of a course in Extreme Value Analysis, with a core focus being how the theory is used for hydrological applications.} My research experience will be invalueable in designing an application relevant course while still conveying the important underlying statistical concepts. This experience includes; extreme value modelling of rainfall extremes, flood events, storm surge and compound events. I am confident I can share this knowledge with students and help instill them with a confidence in their use of extreme value statistics.
+
+While this is indeed an ambitious but achievable goal, I am also \textbf{confident that I can contribute in other ways to the department via the mathematical teaching load}. This is evidenced by my past experience teaching many of the mathematics and statistics subjects that engineers are required to take at the University of Melbourne.
+
+I also hope to be a \textbf{point of call within the department for help on statistical problems and guidance}. Helping others with their research questions forms an important part of contributing to my community and mentoring the next generation of researchers. 
+
+# Supervison
+
+This fellowship provides a great opportuntity to be involved in the supervision of students. In particular, I hope to work with the staff in the labs of Hydrological Processes and Managing Variability to leverage our joint knowledge to create exciting masters student projects. Ideally, this fellowship will also provide an opportuntity for me to gain experience co-supervisoring PhD students. As a recent graduate, I feel I have much to offer in the capacity of PhD co-supervisor and student mentor.
+
+I have learnt from my past supervision experiences, around project scoping, producing tangible outcomes and balancing expectations. I hope to bring this awareness to future students I supervise. Past supervison experience includes helping students to; 
+
+* Perform a sensitivity analysis when estimating tsunami inundation using a shallow water solver. This study was needed to address missing data within the input bathymetry in order to understand model uncertainty.
+* Identify spurious inhomogeneities within daily rainfall observations. Spurious observations can present as extremes which can adversely impact risk estimates.
+* I also have a joint masters project advertised with KNMI (Dutch Meteorlogical Institue) for a student to compare citizen science observations of wind gusts to verified observations. Verifying citizen data is incredibly useful for climate modelling and forecasting wind energy.
+* Outside of formal projects, I also have experience mentoring students both through formal channels, such as the ACEMS mentoring program, and through more informal student networks, such as leadership roles in student societies. 
+
+# Teaching Philosophy
+
+"To be a good teacher you have to be part stand-up comic, part door-to-door salesman, part expert, part counsellor"   
+Bob Solomon.
+
+## Stand-up comic
+
+\textbf{In my classes I try to infuse a combination of humour and honesty}. I find this to be important for creating an environment where students feel comfortable and willing to engage in classroom discussion. Humour helps to diffuse tension and is a useful tool for making complicated subjects feel less alienating. Honesty and openess also help create an environment where students are okay to feel vulnerable and to speak out when they don't understand concepts. \textbf{This style of teaching helps me engage students with the material, and makes the learning fun!} 
+
+## Door to door salesman 
+
+My teaching philosophy is that \textbf{students should take away the core messages of the subject even after they pass the exam}, so they can apply the ideas in their chosen field. This \textbf{requires selling the subject material in such a way that students understand the importance of mastering the material.} I therefore try to pitch my classes so that students are able to distill the important concepts, retain these key messages and have contextual relevance. This positively incentivises student learning. 
+
+## Part Expert
+
+When teaching, I like to \textbf{use examples from my own research to motivate and contextualise the course material}. Given my inter-disciplinary research background, I have wealth of project experience to share, which includes work in hydrology, climatology, statistics and extremes value theory. \textbf{If students can relate to how the subject is used in practice, then they can then better visualise how the subject will be relevant in their future studies and careers.} 
+
+## Part Counsellor 
+
+\textbf{My teaching ethos is to always be kind and understanding.}  Students have to balance many external stressors in additional to their study load. In being an accessible figure, I hope that students feel comfortable talking to me about issues effecting their studies. I can then offer support and direct students, where appropriate, to the relevant university support services.
+
+
+<!-- # Employment -->
+<!-- ```{r} -->
+<!-- tribble( -->
+<!--   ~ role, ~ company, ~ loc, ~ dates, ~ details, -->
+
+<!--   "Postdoctoral Researcher",  -->
+<!--   "Delft University of Technology",  -->
+<!--   "Deflt, Netherlands",  -->
+<!--   "Oct. 2018 - Present",  -->
+<!--   "Collaborating on a joint project with Koninklijk Nederlands Meteorologisch Instituut (KNMI)", -->
+
+<!--    "Graduate Researcher",  -->
+<!--   "Commonwealth Scientific Institue of Technology (CSIRO)",  -->
+<!--   "Melbourne, Australia",  -->
+<!--   "Feb. 2012 - Feb. 2014",  -->
+<!--   "Research Interests: natural disaster modelling, floods, tsnumais, sea level rise, computational fluid dynamics" -->
+
+<!-- ) %>%  -->
+<!--   detailed_entries(company, dates, role, loc, details) -->
+<!-- ``` -->

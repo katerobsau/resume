@@ -430,3 +430,4 @@ tribble(
 <!-- ) %>% -->
 <!--   brief_entries(competition, year, from) -->
 <!-- ``` -->
+
