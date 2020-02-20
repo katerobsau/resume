@@ -3,16 +3,15 @@ name: Kate Saunders
 position: "Postdoctoral Researcher"
 address: "Delft Institute of Applied Mathematics, TU Delft"
 phone: +31 6 3374 7624
-# www: mariecurie.com
+# www: www.webpage.com
 email: "K.R.Saunders@tudelft.nl"
 twitter: katerobsau
 github: katerobsau
-# linkedin: mariecurie
+# linkedin: linkedin
 date: "`r format(Sys.time(), '%B %Y')`"
 output: vitae::awesomecv
 # headcolor: '#9bcf2f'
 ---
-
 
 ```{r setup, include=FALSE}
 library(tidyverse)
@@ -23,43 +22,44 @@ knitr::opts_chunk$set(echo = FALSE)
 # About me
 
  * Current research is in statistical post-processing and compound events
-* Core focus is on improving probabilistic forecasts of extreme weather events
- * PhD research was in extreme value theory
- * Core PhD focus was on modelling rainfall extremes in continuous space with dependence
+ * Core focus is on improving probabilistic forecasts of extreme weather events
+ * PhD studies in extreme value theory with climate applications
+ * Focus was on modelling rainfall extremes in continuous space with dependence
  * Applications considered in the thesis helped to improve our understanding of rainfall extremes in Australia
  * Passionate about R programming and data visualisation
 
 
-# Employment
+# Employment and Education
 ```{r}
 tribble(
-  ~ role, ~ company, ~ loc, ~ dates, ~ details,
+    ~ uni, ~ degree, ~ loc, ~ dates, ~ details,
+  # ~ role, ~ company, ~ loc, ~ dates, ~ details,
   
   "Postdoctoral Researcher", 
   "Delft University of Technology", 
   "Deflt, Netherlands", 
   "Oct. 2018 - Present", 
   "Collaborating on a joint project with Koninklijk Nederlands Meteorologisch Instituut (KNMI)",
-    
-   "Graduate Researcher", 
-  "Commonwealth Scientific Institue of Technology (CSIRO)", 
-  "Melbourne, Australia", 
-  "Feb. 2012 - Feb. 2014", 
-  "Research Interests: natural disaster modelling, floods, tsnumais, sea level rise, computational fluid dynamics"
-  
-) %>% 
-  detailed_entries(company, dates, role, loc, details)
-```
-
-# Education
-```{r}
-tribble(
-  ~ uni, ~ degree, ~ loc, ~ dates, ~ details,
-  
+ 
+# ) %>% 
+#   detailed_entries(company, dates, role, loc, details)
+# ```
+# 
+# # Education
+# ```{r}
+# tribble(
+#   ~ uni, ~ degree, ~ loc, ~ dates, ~ details,
+#   
   "Doctor of Philosophy", "The University of Melbourne", "Melbourne, Australia", "Mar. 2014 - Oct. 2018", "Thesis Advisors: Prof. Peter Taylor, Prof. David Karoly and Dr. Alec Stephenson",
   "Doctor of Philosophy", "The University of Melbourne", "Melbourne, Australia", "Mar. 2014 - Oct. 2018", "Thesis Title: An Investigation of Australian Rainfall using Extreme Value Theory",
   "Doctor of Philosophy", "The University of Melbourne", "Melbourne, Australia", "Mar. 2014 - Oct. 2018", "Research Interests: Extreme Value Theory, Statistics, Max-stable Processes, Rainfall Extremes, Extremal Dependence, Quality Control",
   
+   "Graduate Researcher", 
+  "Commonwealth Scientific Institue of Technology (CSIRO)", 
+  "Melbourne, Australia", 
+  "Feb. 2012 - Feb. 2014", 
+  "Research Interests: natural disaster modelling, floods, tsnumais, sea level rise, computational fluid dynamics",
+
    "Bachelor of Science (Honours I in Mathematics)", "The University of Queensland", "Brisbane, Australia", "Jul. 2010 - Jun. 2011", "Thesis advisors: Prof. Tony Roberts",
   "Bachelor of Science (Honours I in Mathematics)", "The University of Queensland", "Brisbane, Australia", "Jul. 2010 - Jun. 2011", "Thesis title: Mean first passage time for discrete periodic networks",
   
@@ -132,35 +132,23 @@ tribble(
 
 ```
 
-# Invited talks
-
-```{r}
-tribble(
- ~ type, ~ year, ~ where, ~ topic,
- 
-  "Extremes TiDE Seminar Series", 
-  "2019",
-  "Tilburg University, Netherlands",
-  "A Regionalisation Approach for Extremes"
- 
-) %>% 
-  detailed_entries(topic, year, type, where) 
-```
-<!-- Newcastle upcoming -->
-<!-- Delft/Statistics Seminar upcoming -->
-
 # Supervision Experience
 
 ```{r}
 tribble(
  ~ type, ~ year, ~ where, ~ topic,
- 
-"Undergraduate Student",#" (8 week project)", 
+
+"Jiyeu Chen, Masters Student",#" (8 week project)", 
+"2019",
+"Utrecht University",
+"Project Topic: Using citizen science observations to improve wind forecasts", 
+  
+"Kieran Maguire, Undergraduate Student",#" (8 week project)", 
 "2016",
 "The University of Melbourne",
 "Project Topic: Identifying spurious inhomogeneities in daily rainfall observations",
 
-"Undergraduate Student", # (4 week project)", 
+"Meng Shi, Undergraduate Student", # (4 week project)", 
 "2012",
 "CSIRO",
 "Project Topic: A sensitivity analysis of tsunami inundation using a shallow water solver"
@@ -170,17 +158,35 @@ tribble(
 
 # Other Academic Activities
 
+## Invited talks
+
+```{r}
+tribble(
+  ~with, ~when, ~what, ~why,
+ 
+  "Extremes TiDE Seminar Series", 
+  "2019",
+  "Tilburg University, Netherlands",
+  "A Regionalisation Approach for Extremes"
+ 
+  ) %>% 
+   detailed_entries(with = with, when = when, what = what, why = why)
+```
+<!-- Newcastle upcoming -->
+<!-- Delft/Statistics Seminar upcoming -->
+
+
 ## Workshop Organisation
 
 ```{r}
 tribble(
   ~with, ~when, ~what, ~why,
   
-  # "KNMI and TU Delft workshop on post-processing",
-  # "(upcoming in 2019)",
-  # "TU Delft",
-  # "A workshop prom",
-  # 
+  "KNMI and TU Delft joint workshop on post-processing",
+  "2019",
+  "TU Delft",
+  "Inaugural workshop designed to foster collaboration between statistics and climate researchers",
+
   "Climate and Energy College Retreat",
   "2018",
   "Hidden Vale, Victoria",
@@ -225,9 +231,10 @@ tribble(
 ) %>% 
    detailed_entries(with = with, when = when, what = what, why = why)
 ```
-\newpage
+\newpage 
 
 ## Mentoring
+
 ```{r}
 tribble(
   ~with, ~when, ~what, ~why,
@@ -235,12 +242,12 @@ tribble(
   "Grabbing your Audience's Attention: Advice on Giving Talks",
   "2019",
   "ACEMS Seminar Series",
-  "Mentoring talk shared live across ACEMS university nodes",
-  
-  "ACEMS Mentoring Program",
-  "2019",
-  "Mentor",
-  "Paired with an early stage PhD Student in Statistics at Monash University"
+  "Mentoring talk shared live across ACEMS university nodes"
+  # 
+  # "ACEMS Mentoring Program",
+  # "2019",
+  # "Mentor",
+  # "Paired with an early stage PhD Student in Statistics at Monash University"
   
 ) %>% 
    detailed_entries(with = with, when = when, what = what, why = why)
@@ -259,6 +266,59 @@ tribble(
   
 ) %>% 
    detailed_entries(with = with, when = when, where = where, what = what, why = why)
+```
+
+# Scholarships and Awards
+```{r}
+tribble(
+ ~ award, ~ from, ~ amount, ~ dates, ~ details,
+  
+ "Laureate Fellowship: Postgraduate Researcher Award",
+ "The University of Melbourne",
+ "$30,000 AUD per annum (~ €18,800 tax free)",
+ "2014 -- 2018",
+ "Awarded in lieu of the Australian Postgraduate Award ($25,000 AUD per annum)",
+ 
+  "Postgraduate Top Up Scholarship",
+  "CSIRO",
+  "$10,000 per annum (~ €6,265 tax free)",
+  "2015 -- 2018",
+  "Awarded to outstanding graduates to undertake postgraduate research",
+  
+  "Science Abroad Travelling Scholarship",
+  "The University of Melbourne",
+  "$1,500 AUD in total (~ €940 tax free)",
+  "2016",
+  "Awarded to outstanding graduates to undertake research abroad"
+  
+# {\bf The University of Queensland} \smallskip \\
+# {\em Student Exchange Scholarship} (\$5,000 total) \hfill {2010}\\
+# Awarded on the basis of academic merit to support a student exchange abroad \smallskip\\
+# {\em Dean's Commendation, Faculty of Science} \hfill{2007 -- 2009} \\
+# Awarded all eligible semesters for for academic excellence \smallskip\\ 
+# {\em Summer Research Scholarship} (\$2,400 total) \hfill{2009} \\
+# Awarded on the basis of academic merit to undertake an 8 week research project
+
+) %>% 
+  detailed_entries(amount, dates, award, from, details)  
+```  
+
+# Prizes
+```{r}
+tribble(
+ ~ prize, ~ from, ~ year,
+  
+  "Winner of the Young Statisticians Video Competition",
+  "Statistics Society of Australia",
+  # "$200 AUD prize (€125)",
+  "2017",
+  
+  "Winning Team of the Data Challenge: Prediction of Extremal Precipitation", 
+  "Extreme Value Analysis Conference, Delft, 2017",
+   "2017"
+
+) %>% 
+  detailed_entries(from, year, prize) 
 ```
 
 # Outreach & Science Communication
@@ -321,58 +381,7 @@ tribble(
    detailed_entries(with = with, when = when, what = what, why = why)
 ```
 
-# Scholarships and Awards
-```{r}
-tribble(
- ~ award, ~ from, ~ amount, ~ dates, ~ details,
-  
- "Laureate Fellowship: Postgraduate Researcher Award",
- "The University of Melbourne",
- "$30,000 AUD per annum (~ €18,800 tax free)",
- "2014 -- 2018",
- "Awarded in lieu of the Australian Postgraduate Award ($25,000 AUD per annum)",
- 
-  "Postgraduate Top Up Scholarship",
-  "CSIRO",
-  "$10,000 per annum (~ €6,265 tax free)",
-  "2015 -- 2018",
-  "Awarded to outstanding graduates to undertake postgraduate research",
-  
-  "Science Abroad Travelling Scholarship",
-  "The University of Melbourne",
-  "$1,500 AUD in total (~ €940 tax free)",
-  "2016",
-  "Awarded to outstanding graduates to undertake research abroad"
-  
-# {\bf The University of Queensland} \smallskip \\
-# {\em Student Exchange Scholarship} (\$5,000 total) \hfill {2010}\\
-# Awarded on the basis of academic merit to support a student exchange abroad \smallskip\\
-# {\em Dean's Commendation, Faculty of Science} \hfill{2007 -- 2009} \\
-# Awarded all eligible semesters for for academic excellence \smallskip\\ 
-# {\em Summer Research Scholarship} (\$2,400 total) \hfill{2009} \\
-# Awarded on the basis of academic merit to undertake an 8 week research project
-
-) %>% 
-  detailed_entries(amount, dates, award, from, details)  
-```  
-
-# Prizes
-```{r}
-tribble(
- ~ prize, ~ from, ~ year,
-  
-  "Winner of the Young Statisticians Video Competition",
-  "Statistics Society of Australia",
-  # "$200 AUD prize (€125)",
-  "2017",
-  
-  "Winning Team of the Data Challenge: Prediction of Extremal Precipitation", 
-  "Extreme Value Analysis Conference, Delft, 2017",
-   "2017"
-
-) %>% 
-  detailed_entries(from, year, prize) 
-```
+\newpage
 
 # Affiliations 
 
@@ -383,51 +392,8 @@ tribble(
 * Statistical Society of Australia: SSA (Past Member)
 * Australian Mathematical Society (Past Member)
 
-
 <!-- # Referees -->
+
 <!-- Available upon request -->
 
-
-
-<!-- # Relevant Skills -->
-<!-- ```{r} -->
-<!-- cvskill("Data Analysis", c("Visualisation", "Data Cleaning", "Forecasting", "Modelling", "Communication", "Inference", "Machine Learning", "Web Scraping")) -->
-<!-- cvskill("Programming", c("R", "Python", "SQL", "Java", "C", "C++", "HTML/CSS", "TeX", "MATLAB")) -->
-<!-- ``` -->
-
-<!-- # Awards & Achievements -->
-<!-- ## Awards -->
-<!-- ```{r} -->
-<!-- tribble( -->
-<!--   ~ award, ~ from, ~ year, -->
-<!--   "Commerce Dean's Honour", "Monash", "2017", -->
-<!--   "Commerce Dean's Commendation", "Monash", "2016", -->
-<!--   "Science Dean’s List", "Monash", "2014-2016", -->
-<!--   "International Institute of Forecasters Award", "IIF", "2014", -->
-<!--   "Rotary Youth Leadership Award", "Rotary", "2013" -->
-<!-- ) %>% -->
-<!--   brief_entries(award, year, from) -->
-<!-- ``` -->
-
-<!-- ## Scholarships -->
-<!-- ```{r} -->
-<!-- tribble( -->
-<!--   ~ scholarship, ~ from, ~ year, -->
-<!--   "Econometrics Honours Memorial Scholarship", "Monash", "2017", -->
-<!--   "Monash Community Leaders Scholarship", "Monash", "2015 & 2016", -->
-<!--   "Mitcham Rotary Scholarship", "Rotary", "2011 & 2012" -->
-<!-- ) %>% -->
-<!--   brief_entries(scholarship, year, from) -->
-<!-- ``` -->
-
-<!-- ## Competitions -->
-<!-- ```{r} -->
-<!-- tribble( -->
-<!--   ~ competition, ~ from, ~ year, -->
-<!--   "UseR! 2018 Datathon Champion", "UseR!", "2018", -->
-<!--   "RMIT SBITL Analytics Competition Champion", "RMIT", "2017", -->
-<!--   "RMIT SBITL Analytics Competition Champion", "RMIT", "2016" -->
-<!-- ) %>% -->
-<!--   brief_entries(competition, year, from) -->
-<!-- ``` -->
 
