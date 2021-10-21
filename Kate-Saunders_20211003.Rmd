@@ -1,10 +1,10 @@
 ---
 name: Kate Saunders
-position: "Postdoctoral Researcher"
-address: "Delft Institute of Applied Mathematics, TU Delft"
-phone: +31 6 3374 7624
+position: "Lecturer"
+address: "Queensland University of Technology (QUT)"
+phone: +61 7 3138 9952
 # www: www.webpage.com
-email: "K.R.Saunders@tudelft.nl"
+email: "kate.r.saunders@qut.edu.au"
 twitter: katerobsau
 github: katerobsau
 # linkedin: linkedin
@@ -21,15 +21,46 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # About me
 
- * Postdoctoral research is on improving probabilistic forecasts of extreme weather events 
- * Core focus is on statistical post-processing methods for compound events forecasts
- * PhD Thesis submitted October 2018, Graduation Ceremony April 2019
- * Postgraduate studies were in extreme value theory with climate applications
- * Core focus was on modelling rainfall extremes in continuous space with dependence
- <!-- * Applications considered in the thesis helped to improve our understanding of rainfall extremes in Australia -->
- * Passionate about R programming and data visualisation
+ * Primary research interest is in extreme value theory methods as applied to problems in climatology
+ * Other research interests include; statistical post-processing, compound event modelling and quality control 
+ * Passionate about R programming, data visualisation and data ethics
+ * Preference for lecturing into probability and statistics units
+ * Postdoctoral research was in improving statistical post-processing methods for compound event forecasts
+ * Postgraduate research was in extreme value theory methods with applications in Australian rainfall extremes
+* PhD Thesis submitted October 2018, Graduation Ceremony April 2019
+
+ <!-- * Postdoctoral research was on improving probabilistic forecasts of extreme weather events  -->
+ <!-- * Core focus is on statistical post-processing methods for compound events forecasts -->
+ 
+ <!-- * Core focus was on modelling rainfall extremes in continuous space with dependence -->
+ <!-- * Applications considered in the thesis helped to improve our understanding of rainfall extremes in Australia --> 
 
 # Employment and Education
+```{r}
+tribble(
+    ~ uni, ~ degree, ~ loc, ~ dates, ~ details,
+  
+  "Lecturer (3 year fixed term contract)", 
+  "Queensland University of Technology", 
+  "Brisbane, Australia", 
+  "Jan 2021 - Present", 
+  "Currently lecturing Statistical Data Analysis (MXN500) and Quantitative Methods in Science (SEB113)",
+  
+  "Lecturer (3 year fixed term contract)", 
+  "Queensland University of Technology", 
+  "Brisbane, Australia", 
+  "Jan 2021 - Present", 
+  "As unit coordinator I have responsibility for the development, implementation and review of learning and teaching in these units",
+  
+   "Lecturer (3 year fixed term contract)", 
+  "Queensland University of Technology", 
+  "Brisbane, Australia", 
+  "Jan 2021 - Present", 
+  "Research Interests: Extreme Value Theory, Statistical Post-processing, Compound Risk Assessment,  Quality Control"
+  
+  ) %>% 
+  detailed_entries(degree, dates, uni, loc, details)
+```
 ```{r}
 tribble(
     ~ uni, ~ degree, ~ loc, ~ dates, ~ details,
@@ -37,18 +68,25 @@ tribble(
   "Postdoctoral Researcher", 
   "Delft University of Technology", 
   "Deflt, Netherlands", 
-  "Oct. 2018 - Present", 
-  "Collaborate on a joint project with Koninklijk Nederlands Meteorologisch Instituut (KNMI)",
+  "Oct. 2018 - Oct. 2020", 
+  "Collaborated on a joint project with Koninklijk Nederlands Meteorologisch Instituut (KNMI)",
    "Postdoctoral Researcher", 
   "Delft University of Technology", 
   "Deflt, Netherlands", 
-  "Oct. 2018 - Present", 
+  "Oct. 2018 - Oct. 2020", 
   "Project Title: Probabilistic forecasts of extreme weather utilizing advanced methods from extreme value theory",
+  
   "Postdoctoral Researcher", 
   "Delft University of Technology", 
   "Deflt, Netherlands", 
-  "Oct. 2018 - Present", 
-  "Research Interests: Statistical Post-processing, Compound Events, Multivariate Weather Forecasting, Multivariate Scoring"
+  "Oct. 2018 - Oct. 2020", 
+  "Research Interests: Statistical Post-processing, Compound Events, Multivariate Weather Forecasting, Multivariate Scoring",
+  
+  "Postdoctoral Researcher", 
+  "Delft University of Technology", 
+  "Deflt, Netherlands", 
+  "Oct. 2018 - Oct. 2020", 
+  "Lectured Probability and Statistics for Aeronautical Engineers (WI2180LR-II)"
 
   ) %>% 
   detailed_entries(degree, dates, uni, loc, details)
@@ -59,7 +97,7 @@ tribble(
     
   "Doctor of Philosophy", "The University of Melbourne", "Melbourne, Australia", "Mar. 2014 - Oct. 2018", "Thesis Advisors: Prof. Peter Taylor, Prof. David Karoly and Dr. Alec Stephenson",
   "Doctor of Philosophy", "The University of Melbourne", "Melbourne, Australia", "Mar. 2014 - Oct. 2018", "Thesis Title: An Investigation of Australian Rainfall using Extreme Value Theory",
-  "Doctor of Philosophy", "The University of Melbourne", "Melbourne, Australia", "Mar. 2014 - Oct. 2018", "Research Interests: Extreme Value Theory, Statistics, Max-stable Processes, Rainfall Extremes, Extremal Dependence, Quality Control"
+  "Doctor of Philosophy", "The University of Melbourne", "Melbourne, Australia", "Mar. 2014 - Oct. 2018", "Research Interests: Extreme Value Theory, Max-stable Processes, Rainfall Extremes, Extremal Dependence, Quality Control"
 ) %>% 
   detailed_entries(degree, dates, uni, loc, details)
 ```
@@ -71,7 +109,7 @@ tribble(
   "Commonwealth Scientific Institue of Technology (CSIRO)", 
   "Melbourne, Australia", 
   "Feb. 2012 - Feb. 2014", 
-  "Research Interests: Natural Disaster Modelling, ie. Floods, Tsnumais, Sea Level Rise, Computational Fluid Dynamics"
+  "Interested in using computational fluid dynamics for natural disaster modelling, ie. floods, tsnumais, storm  surge, sea level rise"
 ) %>% 
   detailed_entries(degree, dates, uni, loc, details)
 ```
@@ -79,7 +117,7 @@ tribble(
 tribble(
     ~ uni, ~ degree, ~ loc, ~ dates, ~ details,
       
-   "Bachelor of Science (Honours I in Mathematics)", "The University of Queensland", "Brisbane, Australia", "Jul. 2010 - Jun. 2011", "Thesis advisors: Prof. Tony Roberts",
+   "Bachelor of Science (Honours I in Mathematics)", "The University of Queensland", "Brisbane, Australia", "Jul. 2010 - Jun. 2011", "Thesis advisor: Prof. Tony Roberts",
   "Bachelor of Science (Honours I in Mathematics)", "The University of Queensland", "Brisbane, Australia", "Jul. 2010 - Jun. 2011", "Thesis title: Mean First Passage Time for Discrete Periodic Networks"
 ) %>% 
   detailed_entries(degree, dates, uni, loc, details)
@@ -95,15 +133,72 @@ tribble(
 ```
 
 # Publications
+
+```{r}
+tribble(
+   ~ what_title, ~ when_year, ~ with_journal, ~ where_status, ~ why_details,
+  
+  "Bottom-up identification of key elements of compound events",
+  "2021",
+  "Earth's Future",
+  "Accepted with minor revisions",
+  "E. Bevacqua, C. De Michele, C. Manning, A. Couasnon, A.F.S. Ribeiro, A.M. Ramos, E. Vignotto, A. Bastos, S. Blesic, F. Durante, J. Hillier, S.C. Oliveira, J.G. Pinto
+E. Ragno, P. Rivoire, K.R. Saunders, K. Van Der Wiel, W. Wu, T. Zhang, J. Zscheischler",
+  
+  "Bottom-up identification of key elements of compound events",
+  "2021",
+  "Earth's Future",
+  "Accepted with minor revisions",
+  "Preprint: doi.org/10.1002/essoar.10507809.1"
+ 
+ ) %>% 
+  detailed_entries(
+                 what = with_journal,
+                 when = when_year, 
+                 with = what_title,
+                 where = where_status,
+                 why = why_details)
+```
+
+```{r}
+tribble(
+   ~ what_title, ~ when_year, ~ with_journal, ~ where_status, ~ why_details,
+  
+  "Quality control and bias adjustment of crowd sourced wind speed observations",
+  "2021",
+  "Quarterly Journal of the Royal Meteorological Society",
+  " ",
+  "J. Chen, K. R. Saunders, and K. Whan",
+  
+  "Quality control and bias adjustment of crowd sourced wind speed observations",
+  "2021",
+  "Quarterly Journal of the Royal Meteorological Society",
+  " ",
+  "DOI: 10.1002/qj.4146"
+ 
+ ) %>% 
+  detailed_entries(
+                 what = with_journal,
+                 when = when_year, 
+                 with = what_title,
+                 where = where_status,
+                 why = why_details)
+```  
 ```{r}
 tribble(
    ~ what_title, ~ when_year, ~ with_journal, ~ where_status, ~ why_details,
   
   "Redefining Southern Australia’s Climatic Regions and Seasons",
-  "2020",
+  "2021",
   "Journal of Southern Hemisphere Earth Systems Science", 
-  "In Review",
-  "S. Fiddes, A. Pepler, K. R. Saunders, and P. Hope"
+  "",
+  "S. Fiddes, A. Pepler, K. R. Saunders, and P. Hope",
+  
+  "Redefining Southern Australia’s Climatic Regions and Seasons",
+  "2021",
+  "Journal of Southern Hemisphere Earth Systems Science", 
+  "",
+  "DOI: 10.1071/ES20003"
 
  ) %>% 
   detailed_entries(
@@ -120,16 +215,16 @@ tribble(
   ~ what_title, ~ when_year, ~ with_journal, ~ where_status, ~ why_details,
  
   "Attribution of the Australian Bushfire Risk to Anthropogenic Climate Change",  
-  "2020", 
+  "2021", 
   "Natural Hazards Earth System Sciences", 
-  "In Review",
+  "",
   "G. J. van Oldenborgh, F. Krikken, S. Lewis, N. J. Leach, F. Lehner, K. R. Saunders, M. van Weele, K. Haustein, S. Li, et al.",
   
   "Attribution of the Australian Bushfire Risk to Anthropogenic Climate Change",
-  "2020",
+  "2021",
   "Natural Hazards Earth System Sciences",
-  "In Review",
-  "DOI: 10.5194/nhess-2020-69"
+  "",
+  "DOI: 10.5194/nhess-21-941-2021"
  
  ) %>% 
   detailed_entries(what = with_journal,
@@ -146,14 +241,14 @@ tribble(
   "A Regionalisation Approach for Rainfall based on Extremal Dependence",
   "2020",
   "Extremes",
-  "Accepted awaiting print", 
+  "", 
   "K.R. Saunders, A.G. Stephenson, AG and D.J. Karoly",
   
   "A Regionalisation Approach for Rainfall based on Extremal Dependence",
   "2020",
   "Extremes",
-  "Accepted awaiting print", 
-  "Preprint: https://arxiv.org/abs/1907.05750"
+  "", 
+  "DOI: 10.1007/s10687-020-00395-y"
   
  ) %>% 
   detailed_entries(what = with_journal,
@@ -271,153 +366,133 @@ tribble(
                  why = why_details)
 ```  
 
-# Teaching Experience
-```{r}
-tribble(
-  ~ position, ~ faculty, ~ location, ~ year, ~ details,
-  
-  "Lecturer",
-  "Deflt Institute of Applied Mathematics",
-  "TU Delft",
-  "2019",
-  "WI2180LR-II Probability and Statistics for Aeronautical Engineers",
-  "Lecturer",
-  "Deflt Institute of Applied Mathematics",
-  "TU Delft",
-  "2019",
-  "Responsibilities included: Course development, assessment design, student consultation, collecting PRIME learning statistics"
-  
-) %>% 
-  detailed_entries(faculty, year, position, location, details)
+<!-- # Teaching Experience -->
+<!-- ```{r} -->
+<!-- tribble( -->
+<!--   ~ position, ~ faculty, ~ location, ~ year, ~ details, -->
 
-```  
-```{r}
-tribble(
-  ~ position, ~ faculty, ~ location, ~ year, ~ details,
-    
-  "Sessional Tutor",
-  "School of Mathematics and Statistics",
-  "The University of Melbourne",
-  "2014 -- 2015",
-  "MAST20005 Statistics, MAST20004 Probability for statistics, MAST10006 Calculus 2"
-  
-) %>% 
-  detailed_entries(faculty, year, position, location, details)
+<!--   "Lecturer", -->
+<!--   "Deflt Institute of Applied Mathematics", -->
+<!--   "TU Delft", -->
+<!--   "2019", -->
+<!--   "WI2180LR-II Probability and Statistics for Aeronautical Engineers", -->
+<!--   "Lecturer", -->
+<!--   "Deflt Institute of Applied Mathematics", -->
+<!--   "TU Delft", -->
+<!--   "2019", -->
+<!--   "Responsibilities included: Course development, assessment design, student consultation, collecting PRIME learning statistics" -->
 
-```
-```{r}
-tribble(
-  ~ position, ~ faculty, ~ location, ~ year, ~ details,
-    
-  # "College Tutor",
-  # "Newman College", 
-  # "The University of Melbourne",
-  # "2015",
-  # "Probability and Statistics tutor for undergraduate students",
-  # 
-  "Sessional Tutor",
-  "School of Mathematics and Physics",
-  "The University of Queensland",
-  "2007 -- 2011",
-  "MATH1061 Discrete Mathematics, MATH1051 Calculus and Linear Algebra,
-  MATH1050 Mathematical Foundations, MATH1040 Basic Mathematics"
-  
-) %>% 
-  detailed_entries(faculty, year, position, location, details)
+<!-- ) %>%  -->
+<!--   detailed_entries(faculty, year, position, location, details) -->
 
-```
+<!-- ```   -->
+<!-- ```{r} -->
+<!-- tribble( -->
+<!--   ~ position, ~ faculty, ~ location, ~ year, ~ details, -->
 
-# Supervision Experience
-```{r}
-tribble(
- ~what_student, ~ when_year, ~with_supervisors, ~ where_university, ~ why_details,
+<!--   "Sessional Tutor", -->
+<!--   "School of Mathematics and Statistics", -->
+<!--   "The University of Melbourne", -->
+<!--   "2014 -- 2015", -->
+<!--   "MAST20005 Statistics, MAST20004 Probability for statistics, MAST10006 Calculus 2" -->
 
-"Jiyeu Chen - Masters Thesis",#" (8 week project)", 
-"2020",
-"Primary Co-supervisors: Kate Saunders and Kirien Whan at KNMI, with University Co-Supervisor: Jason Frank",
-"Utrecht University",
-"Project Title: Quality control and verification of citizen science wind observations", 
-"Jiyeu Chen - Masters Thesis",#" (8 week project)", 
-"2020",
-"Primary Co-supervisors: Kate Saunders and Kirien Whan at KNMI, with University Co-Supervisor: Jason Frank",
-"Utrecht University",
-"Paper in prepartion for Quarterly Journal of the Royal Meteorlogical Society",
-"Jiyeu Chen - Masters Thesis",#" (8 week project)", 
-"2020",
-"Primary Co-supervisors: Kate Saunders and Kirien Whan at KNMI, with University Co-Supervisor: Jason Frank",
-"Utrecht University",
-"Expected paper submission November 2020",
-"Jiyeu Chen - Masters Thesis",#" (8 week project)", 
-"2020",
-"Primary Co-supervisors: Kate Saunders and Kirien Whan at KNMI, with University Co-Supervisor: Jason Frank",
-"Utrecht University",
-"KNMI also provided additional funding to produce a quality controlled dataset and an R Package") %>% 
-  detailed_entries(with_supervisors, when_year, what_student, where_university,
-                   why_details) 
-```
-```{r}
-tribble(
- ~what_student, ~ when_year, ~with_supervisors, ~ where_university, ~ why_details,
+<!-- ) %>%  -->
+<!--   detailed_entries(faculty, year, position, location, details) -->
 
-"Kieran Maguire - Undergraduate Project",#" (8 week project)", 
-"2016",
-"Co-supervisors: Kate Saunders and Peter Taylor",
-"The University of Melbourne",
-"Project Title: Identifying spurious inhomogeneities in daily rainfall observations",
-"Kieran Maguire - Undergraduate Project",#" (8 week project)", 
-"2016",
-"Co-supervisors: Kate Saunders and Peter Taylor",
-"The University of Melbourne",
-"The technical report from this project was shared with the Bureau of Meteorology") %>% 
-  detailed_entries(with_supervisors, when_year, what_student, where_university,
-                   why_details) 
-```
-```{r}
-tribble(
- ~what_student, ~ when_year, ~with_supervisors, ~ where_university, ~ why_details,
+<!-- ``` -->
+<!-- ```{r} -->
+<!-- tribble( -->
+<!--   ~ position, ~ faculty, ~ location, ~ year, ~ details, -->
 
-"Meng Shi - Undergraduate Project", # (4 week project)", 
-"2012",
-"Co-supervisors: Carolyn Huston and Kate Saunders",
-"CSIRO",
-"Project Title: A sensitivity analysis of tsunami inundation using a shallow water solver"
+<!--   # "College Tutor", -->
+<!--   # "Newman College",  -->
+<!--   # "The University of Melbourne", -->
+<!--   # "2015", -->
+<!--   # "Probability and Statistics tutor for undergraduate students", -->
+<!--   #  -->
+<!--   "Sessional Tutor", -->
+<!--   "School of Mathematics and Physics", -->
+<!--   "The University of Queensland", -->
+<!--   "2007 -- 2011", -->
+<!--   "MATH1061 Discrete Mathematics, MATH1051 Calculus and Linear Algebra, -->
+<!--   MATH1050 Mathematical Foundations, MATH1040 Basic Mathematics" -->
 
+<!-- ) %>%  -->
+<!--   detailed_entries(faculty, year, position, location, details) -->
 
-) %>% 
-  detailed_entries(with_supervisors, when_year, what_student, where_university,
-                   why_details) 
-```
+<!-- ``` -->
 
 # Grants
+
 ```{r}
 tribble(
  ~what_grant, ~ when_year, ~with_coapplicants, ~ where_fundingbody, ~ why_details,
 
-  "Research Support Scheme ($20,000 AUD)", 
-  "2020",
-  "Applicants: Dr. Boris Beranger (UNSW), Dr. Kate Saunders (TU Delft) and Dr. Alec Stephenson (CSIRO)",
-  "ACEMS",
-  "Grant Title: Modelling of Environmental and Climate Extremes",
-  "Research Support Scheme ($20,000 AUD)", 
-  "2020",
-  "Applicants: Dr. Boris Beranger (UNSW), Dr. Kate Saunders (TU Delft) and Dr. Alec Stephenson (CSIRO)",
-  "ACEMS",
-  "This grant is to foster collaboration between ACEMS Research Fellows and Associate Investigators",
-  "Research Support Scheme ($20,000 AUD)", 
-  "2020",
-  "Applicants: Dr. Boris Beranger (UNSW), Dr. Kate Saunders (TU Delft) and Dr. Alec Stephenson (CSIRO)",
-  "ACEMS",
-  "As corona prevents international travel this funding went into stasis",
- "Research Support Scheme ($20,000 AUD)", 
-  "2020",
-  "Applicants: Dr. Boris Beranger (UNSW), Dr. Kate Saunders (TU Delft) and Dr. Alec Stephenson (CSIRO)",
-  "ACEMS",
-  "This funding can now be used for domestric travel given my forthcoming position at QUT"
+  "First Byte ($10,000 AUD)", 
+  "2021",
+  "Applicants: Dr. Dr. Kate Saunders (QUT) to work jointly with researchers at the Bureau of Meteorology",
+  "QUT Centre for Data Science",
+  "Grant Title: Understanding the value of observations for wind forecasting on days  of high fire danger"
+ 
 ) %>% 
   detailed_entries(with_coapplicants, when_year, what_grant, where_fundingbody,
                    why_details) 
 ```
+
 ```{r}
+tribble(
+ ~what_grant, ~ when_year, ~with_coapplicants, ~ where_fundingbody, ~ why_details,
+
+  "ACEMS Ideas Challenge ($10,000 AUD)", 
+  "2021",
+  "Applicants: Dr. Dr. Kate Saunders (QUT), Dr. Carolyn Huston (CSIRO) and Dr. Petra Kuhnert (CSIRO)",
+  "ACEMS",
+  "Grant Title: Complementing official wind records with crowd-sourced observations for improved forecasts of wind and fire behaviour",
+ 
+   "ACEMS Ideas Challenge ($10,000 AUD)", 
+  "2021",
+  "Applicants: Dr. Dr. Kate Saunders (QUT), Dr. Carolyn Huston (CSIRO) and Dr. Petra Kuhnert (CSIRO)",
+  "ACEMS",
+  "This grant is to fund research between ACEMS researchers and industry partners"
+ 
+) %>% 
+  detailed_entries(with_coapplicants, when_year, what_grant, where_fundingbody,
+                   why_details) 
+```
+
+```{r}
+tribble(
+ ~what_grant, ~ when_year, ~with_coapplicants, ~ where_fundingbody, ~ why_details,
+
+  "Research Support Scheme ($15,000 AUD)", 
+  "2020",
+  "Applicants: Dr. Boris Beranger (UNSW), Dr. Kate Saunders (TU Delft) and Dr. Alec Stephenson (CSIRO)",
+  "ACEMS",
+  "Grant Title: Modelling of Environmental and Climate Extremes",
+ 
+  "Research Support Scheme ($15,000 AUD)", 
+  "2020",
+  "Applicants: Dr. Boris Beranger (UNSW), Dr. Kate Saunders (TU Delft) and Dr. Alec Stephenson (CSIRO)",
+  "ACEMS",
+  "This grant is to foster collaboration between ACEMS Research Fellows and Associate Investigators",
+ 
+  "Research Support Scheme ($15,000 AUD)", 
+  "2020",
+  "Applicants: Dr. Boris Beranger (UNSW), Dr. Kate Saunders (TU Delft) and Dr. Alec Stephenson (CSIRO)",
+  "ACEMS",
+  "As corona prevents international travel this funding initially went into stasis",
+ 
+ "Research Support Scheme ($15,000 AUD)", 
+  "2020",
+  "Applicants: Dr. Boris Beranger (UNSW), Dr. Kate Saunders (TU Delft) and Dr. Alec Stephenson (CSIRO)",
+  "ACEMS",
+  "This funding has since been diverted to a research assistant due to rolling lockdowns"
+ 
+) %>% 
+  detailed_entries(with_coapplicants, when_year, what_grant, where_fundingbody,
+                   why_details) 
+```
+```{r echo = FALSE, eval = FALSE}
 tribble(
  ~what_grant, ~ when_year, ~with_coapplicants, ~ where_fundingbody, ~ why_details,
 
@@ -446,26 +521,67 @@ tribble(
                    why_details) 
 ```
 
+# Prizes
+```{r}
+tribble(
+ ~what_prize, ~ when_year, ~with_coapplicants, ~ where_fundingbody, ~ why_details,
+
+#  "Winner of the Harry Otten Prize in Meteorology",
+#  "European Meteorological Society",
+#  "1st prize: €25,500 ($40,000 AUD)",
+#  "2021",
+#  "Final announcement to be made at the September Meeting of the European Meteorolocial Society",
+
+ "Harry Otten Prize: 1st place €25,500 ($40,000 AUD)",
+ "2021",
+ "Joint winner with Dr. Kirien Whan from KNMI",
+ "European Meteorological Society",
+ "A prize for innovation in meteorology",
+
+ "Harry Otten Prize: 1st place €25,500 ($40,000 AUD)",
+ "2021",
+ "Joint winner with Dr. Kirien Whan from KNMI",
+ "European Meteorological Society",
+ "Project title: Second Wind - Extending the official wind gust record with citizen science observations",
+
+  "Winner of the Young Statisticians Video Competition ($200 AUD)", 
+# prize (€125)"",
+  "2017",  
+  "K.R. Saunders",
+  "Statistics Society of Australia",
+  "https://www.youtube.com/watch?v=88ZRYK0DmKs&ab_channel=KateSaunders",
+
+  "Winning Team of the Data Challenge: Prediction of Extremal Precipitation",
+  "2017",
+  "A.G. Stephenson,  K.R. Saunders and L. Tafekori",
+  "Extreme Value Analysis Conference, Delft",
+  "Winning method was published: DOI: 10.1007/s10687-018-0321-0"
+
+) %>%
+  detailed_entries(with_coapplicants, when_year, what_prize, where_fundingbody,
+                   why_details)
+```
+
 # Scholarships and Awards
 ```{r}
 tribble(
  ~ award, ~ from, ~ amount, ~ dates, ~ details,
-
- "Laureate Fellowship: Postgraduate Researcher Award",
+ 
+ "Postgraduate Researcher Award funded by a Laureate Fellowship",
  "The University of Melbourne",
- "$30,000 AUD per annum (~ €18,800 tax free)",
+ "$30,000 AUD per annum", #(~ €18,800 tax free)
  "2014 -- 2018",
  "Awarded in lieu of the Australian Postgraduate Award ($25,000 AUD per annum)",
 
   "Postgraduate Top Up Scholarship",
   "CSIRO",
-  "$10,000 per annum (~ €6,265 tax free)",
+  "$10,000 per annum", # (~ €6,265 tax free)",
   "2015 -- 2018",
   "Awarded to outstanding graduates to undertake postgraduate research",
 
   "Science Abroad Travelling Scholarship",
   "The University of Melbourne",
-  "$1,500 AUD in total (~ €940 tax free)",
+  "$1,500 AUD in total", # (~ €940 tax free)",
   "2016",
   "Awarded to outstanding graduates to undertake research abroad"
 
@@ -481,39 +597,94 @@ tribble(
   detailed_entries(amount, dates, award, from, details)
 ```
 
-<!-- # Prizes -->
-<!-- ```{r} -->
-<!-- tribble( -->
-<!--  ~ prize, ~ from, ~ year, -->
 
-<!--   "Winner of the Young Statisticians Video Competition", -->
-<!--   "Statistics Society of Australia", -->
-<!--   # "$200 AUD prize (€125)", -->
-<!--   "2017", -->
+# Supervision Experience
+```{r}
+tribble(
+ ~what_student, ~ when_year, ~with_supervisors, ~ where_university, ~ why_details,
 
-<!--   "Winning Team of the Data Challenge: Prediction of Extremal Precipitation", -->
-<!--   "Extreme Value Analysis Conference, Delft, 2017", -->
-<!--    "2017" -->
+"Jiyeu Chen - Masters Thesis",#" (8 week project)", 
+"2020",
+"Primary Co-supervisors: Kate Saunders and Kirien Whan at KNMI, with University Co-Supervisor: Jason Frank",
+"Utrecht University",
+"Project Title: Quality control and verification of citizen science wind observations", 
 
-<!-- ) %>% -->
-<!--   detailed_entries(from, year, prize) -->
-<!-- ``` -->
+"Jiyeu Chen - Masters Thesis",#" (8 week project)", 
+"2020",
+"Primary Co-supervisors: Kate Saunders and Kirien Whan at KNMI, with University Co-Supervisor: Jason Frank",
+"Utrecht University",
+"Paper accepted in the Quarterly Journal of the Royal Meteorlogical Society",
+
+"Jiyeu Chen - Masters Thesis",#" (8 week project)", 
+"2020",
+"Primary Co-supervisors: Kate Saunders and Kirien Whan at KNMI, with University Co-Supervisor: Jason Frank",
+"Utrecht University",
+"KNMI also provided additional funding to produce a quality controlled dataset and an R Package") %>% 
+  detailed_entries(with_supervisors, when_year, what_student, where_university,
+                   why_details) 
+```
+```{r}
+tribble(
+ ~what_student, ~ when_year, ~with_supervisors, ~ where_university, ~ why_details,
+
+"Kieran Maguire - Undergraduate Project",#" (8 week project)", 
+"2016",
+"Co-supervisors: Kate Saunders and Peter Taylor",
+"The University of Melbourne",
+"Project Title: Identifying spurious inhomogeneities in daily rainfall observations",
+"Kieran Maguire - Undergraduate Project",#" (8 week project)", 
+"2016",
+"Co-supervisors: Kate Saunders and Peter Taylor",
+"The University of Melbourne",
+"The technical report from this project was shared with the Bureau of Meteorology") %>% 
+  detailed_entries(with_supervisors, when_year, what_student, where_university,
+                   why_details) 
+```
+
+```{r echo = FALSE, eval = FALSE}
+tribble(
+ ~what_student, ~ when_year, ~with_supervisors, ~ where_university, ~ why_details,
+
+"Meng Shi - Undergraduate Project", # (4 week project)", 
+"2012",
+"Co-supervisors: Carolyn Huston and Kate Saunders",
+"CSIRO",
+"Project Title: A sensitivity analysis of tsunami inundation using a shallow water solver"
+
+
+) %>% 
+  detailed_entries(with_supervisors, when_year, what_student, where_university,
+                   why_details) 
+```
 
 # Other Academic Activities
 
 ## Invited talks
 
+<!-- Reply to Josh and accept talk -->
 ```{r}
 tribble(
   ~what_seminar, ~when_year, ~with_inviter, ~where_location, ~why_details,
-
+  
+  "Spatial Extremes Session",
+  "(Upcoming) December, 2021",
+  "Computational and Methodological Statistics",
+  "London and in hybrid",
+  "Extreme Value Modelling of Compound Rainfall Extremes",
+  
+  "Bureau of Meteorology Research Seminar",
+  "April, 2021",
+  "Bureau of Meteorology",
+  "Virtual",
+  "Second Wind: Extending the official wind speed records with citizen science observations",
+  
   "Machine Learning in the Netherlands (ML in NL) ",
   "April, 2020 (Cancelled Due to Corona)",
   "Picnic Data Science",
   "Amsterdam, Netherlands",
   "Examining our Implicit Assumptions when Clustering",
 
-  "Probabilty Seminar",
+  "Newcastle Probabilty Seminar",
   "March, 2020 (Cancelled Due to Corona)",
   "Newcastle University",
   "Newcastle, UK",
@@ -532,6 +703,7 @@ tribble(
 
 ## Workshop Organisation
 
+<!-- Add in organisor for flood workshop -->
 ```{r}
 tribble(
   ~what_workshop, ~when_year, ~with_attendees,
@@ -564,12 +736,31 @@ tribble(
 ## Journal Refereering
 Weather and Climate Extremes, Environmetrics, Extremes, Spatial Statistics, Stochastic Networks
 
-## Promotion of Women in STEM
+## Contribution to promoting women in STEM and general diversity
 
+<!-- Add in moderator for the E & D panel  -->
 ```{r}
 tribble(
   ~what_talk, ~when_year, ~with_invitee, ~where_location, ~why_details,
 
+  "ACEMS Equity and Diversity Commitee",
+  "2021",
+  "Chair",
+  "Australia",
+  "ACEMS is underpinned by a commitment to equal opportunity and diversity",
+  
+  "Reboot STEMM Workshop",
+  "2021",
+  "Volunteer participant",
+  "Virtual",
+  "Involved in think-tank discussion with early- and mid-career researchers (EMCRs)",
+  
+   "Reboot STEMM Workshop",
+  "2021",
+  "Volunteer participant",
+  "Virtual",
+  "Helped co-design a strategy for a more inclusive and diverse way of defining, recognising and rewarding success",
+  
   "An Introduction to Web Scraping using Rvest",
   "2019",
   "Invited presentation for R-Ladies Rotterdam",
@@ -596,7 +787,8 @@ tribble(
 ```
 
 ## Mentoring
-
+<!-- Could add in AMEG -->
+<!-- volunteer speaker on the other panel -->
 ```{r}
 tribble(
   ~what_talk, ~when_year, ~with_person, ~where_location,
@@ -618,7 +810,7 @@ tribble(
                    where_location, why_details)
 ```
 
-## Committee Positions
+## Other Committee Positions
 ```{r}
 tribble(
   ~what_position, ~when_year, ~with_university, ~where_location, ~why_details,
@@ -711,16 +903,18 @@ tribble(
 
 # Affiliations 
 
-* Academic Collaborator with Koninklijk Nederlands Meteorologisch Instituut (KNMI)
+<!-- * Academic Collaborator with Koninklijk Nederlands Meteorologisch Instituut (KNMI) -->
+* Member of the QUT Centre for Data Science
 * Member of the European COST Action for compound events (Damocles)
 * Associate Investigator with Australian Centre of Excellence in Mathematical and Statistical Frontiers (ACEMS)
 * German Climate and Energy College (Alumni)
-* Australian Women in Mathematics Special Interest Group (WIMSIG) (Past Member)
-* Statistical Society of Australia: SSA (Past Member)
-* Australian Mathematical Society (Past Member)
 
-# Referees
+<!-- * Australian Women in Mathematics Special Interest Group (WIMSIG) (Past Member) -->
+<!-- * Statistical Society of Australia: SSA (Past Member) -->
+<!-- * Australian Mathematical Society (Past Member) -->
 
-Available upon request
+<!-- # Referees -->
+
+<!-- Available upon request -->
 
 
